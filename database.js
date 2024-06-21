@@ -2,19 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskForm = document.getElementById('task-form');
     const taskList = document.getElementById('task-list');
 
-    // Función para obtener tareas desde localStorage
     const getTasks = () => {
         let tasksString = localStorage.getItem('tasks');
         let tasks = tasksString ? JSON.parse(tasksString) : [];
         return tasks;
     };
 
-    // Función para guardar tareas en localStorage
     const saveTasks = (tasks) => {
         localStorage.setItem('tasks', JSON.stringify(tasks));
     };
 
-    // Función para añadir una tarea
     const addTask = async (task) => {
         let tasks = getTasks();
         tasks.push(task);
@@ -22,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return { success: true, message: 'Task added successfully' };
     };
 
-    // Función para eliminar una tarea
     const deleteTask = async (taskId) => {
         let tasks = getTasks().filter(task => task._id !== taskId);
         saveTasks(tasks);
@@ -52,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
             taskList.appendChild(row);
         });
 
-        // Event listeners para los iconos de eliminar
         document.querySelectorAll('.delete-icon').forEach(icon => {
             icon.addEventListener('click', async (event) => {
                 const taskId = event.target.getAttribute('data-id');
@@ -107,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: type.value,
             date: date,
             description: description,
-            _id: Date.now().toString() // Generamos un ID único para la tarea
+            _id: Date.now().toString() // Date stamp id, so it's unique
         };
 
         const result = await addTask(task);
@@ -121,6 +116,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Llamamos a updateTable inicialmente para cargar las tareas existentes
     updateTable();
 });

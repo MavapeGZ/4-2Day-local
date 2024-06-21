@@ -142,7 +142,6 @@ form div label {
     text-align: center;
 }
 
-/* Estilos para la tabla */
 #table {
     width: 100%;
     border-collapse: collapse;
@@ -160,20 +159,14 @@ form div label {
     background-color: #f2f2f2;
 }
 
-/* Ajustes específicos para la columna Date */
+
 #table td:nth-child(3) {
-    /* Ajusta según la posición de la columna Date en tu tabla */
     white-space: nowrap;
-    /* Evita que el contenido se ajuste automáticamente */
     overflow: hidden;
-    /* Oculta cualquier contenido que se desborde */
     text-overflow: ellipsis;
-    /* Muestra puntos suspensivos (...) si el contenido desborda */
     max-width: 200px;
-    /* Ajusta según el tamaño máximo que deseas que ocupe la celda */
 }
 
-/* Opcional: Asegurar que el texto completo se muestre en hover */
 #table td:nth-child(3):hover {
     white-space: normal;
     overflow: visible;
@@ -183,35 +176,31 @@ form div label {
 
 #table img {
     max-width: 50px;
-    /* Ajusta el tamaño máximo de las imágenes */
     height: auto;
-    /* Mantener la proporción de aspecto */
     display: block;
-    /* Evitar el espacio adicional */
     margin: 0 auto;
-    /* Centrar la imagen dentro de la celda */
 }
 
 #task_data td.description {
-    word-wrap: break-word; /* Permitir ajuste de línea */
-    white-space: normal;   /* Permitir que el texto se ajuste a múltiples líneas */
+    word-wrap: break-word; 
+    white-space: normal;  
 }
 
 .delete-icon {
     cursor: pointer;
-    width: 30px; /* Ajustar según el tamaño deseado */
-    height: 30px; /* Ajustar según el tamaño deseado */
+    width: 30px; 
+    height: 30px; 
 }
 
 .past-due {
-    background-color: #ac414a; /* Color pastel para tareas pasadas */
+    background-color: #ac414a;
 }
 
 .error-message {
     color: red;
     font-size: 0.9em;
     margin-top: 5px;
-    display: none; /* Inicialmente oculto */
+    display: none; 
 }
 
 .name, .description {
