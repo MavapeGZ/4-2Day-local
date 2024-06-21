@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #A8D8D8;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 80px;
+    font-family: Arial, sans-serif;
+}
+
+#task_input {
+    margin: 0 40px 0 40px;
+}
+
+.task_input_container {
+    background-color: #bcd9e7;
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px #688f8f;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+}
+
+.task h1 {
+    text-align: center;
+}
+
+.task_input_field {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.task_input_container form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    padding: 8px 15px;
+    border: none;
+    background-color: #aaaaaa;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #5a5a5a5d;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.type-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.type-options input[type="radio"] {
+    display: none;
+}
+
+.type-options label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.type-options label img {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    max-width: 80px;
+    height: auto;
+}
+
+.type-options input[type="radio"]:checked+label img {
+    border-color: #79d0d0;
+}
+
+#btn {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+form div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#task_data {
+    margin: 0 40px 0 40px;
+    overflow: auto;
+}
+
+#task_data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task_data_container {
+    background-color: #bcd9e7;
+    padding: 30px;
+    margin: 0 30px 0 30px;
+    box-shadow: 0 0 10px #aaaaaa;
+    border-radius: 10px;
+}
+
+#table thead {
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+#table thead td {
+    padding: 20px;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Estilos para la tabla */
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#table th,
+#table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#table th {
+    background-color: #f2f2f2;
+}
+
+/* Ajustes específicos para la columna Date */
+#table td:nth-child(3) {
+    /* Ajusta según la posición de la columna Date en tu tabla */
+    white-space: nowrap;
+    /* Evita que el contenido se ajuste automáticamente */
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde */
+    text-overflow: ellipsis;
+    /* Muestra puntos suspensivos (...) si el contenido desborda */
+    max-width: 200px;
+    /* Ajusta según el tamaño máximo que deseas que ocupe la celda */
+}
+
+/* Opcional: Asegurar que el texto completo se muestre en hover */
+#table td:nth-child(3):hover {
+    white-space: normal;
+    overflow: visible;
+    z-index: 1;
+    position: relative;
+}
+
+#table img {
+    max-width: 50px;
+    /* Ajusta el tamaño máximo de las imágenes */
+    height: auto;
+    /* Mantener la proporción de aspecto */
+    display: block;
+    /* Evitar el espacio adicional */
+    margin: 0 auto;
+    /* Centrar la imagen dentro de la celda */
+}
+
+#task_data td.description {
+    word-wrap: break-word; /* Permitir ajuste de línea */
+    white-space: normal;   /* Permitir que el texto se ajuste a múltiples líneas */
+}
+
+.delete-icon {
+    cursor: pointer;
+    width: 30px; /* Ajustar según el tamaño deseado */
+    height: 30px; /* Ajustar según el tamaño deseado */
+}
+
+.past-due {
+    background-color: #ac414a; /* Color pastel para tareas pasadas */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none; /* Inicialmente oculto */
+}
+
+.name, .description {
+    word-wrap: break-word;
+    white-space: normal;
+}
