@@ -19,8 +19,8 @@
 #### Steps to Install and Run
 
 1. **Clone the repository**
-`git clone https://github.com/MavapeGZ/4-2Day-electron.git`
-   `cd 4-2Day-electron`
+`git clone https://github.com/MavapeGZ/4-2Day-local.git`
+   `cd 4-2Day-local`
    
 2. **Install dependencies**
 `npm install`
