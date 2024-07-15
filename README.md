@@ -9,4 +9,4 @@
 
 *To check the database electron project click [here](https://github.com/MavapeGZ/4-2day-electron.git).*
 
-**This software is free to use but it comes with no warranty. To use it only give credit to the developer.**
+**This software is free to use but it comes with no warranty. ISC License**
