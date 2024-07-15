@@ -32,11 +32,9 @@
 If you want to make changes or further develop the project, you can use the following commands:
 
 - Build the app
-  
 `npm run build` 
 
 - Run in development mode
-  
 `npm run dev`
 
 #### License
