@@ -39,6 +39,3 @@ If you want to make changes or further develop the project, you can use the foll
 
 #### License
 *This software is free to use but it comes with no warranty. ISC License.*
-
-#### Contact
-For any inquiries, please contact Mario Vázquez Pérez at mavape4403@gmail.com
