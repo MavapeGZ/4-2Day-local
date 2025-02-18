@@ -7,7 +7,7 @@
 - The project compares the performance of this app using local storage versus using a database (this is the local version).
 
 
-*To check the local storage project, click [here](https://github.com/MavapeGZ/4-2Day-local.git).*
+*To check the electron project, click [here](https://github.com/MavapeGZ/4-2day-electron).*
 
 ### Installation and Running the Project
 
